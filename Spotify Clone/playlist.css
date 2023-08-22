@@ -1,0 +1,302 @@
+*{
+    font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+margin: 0;
+background-color: black;
+color: azure;
+overflow: hidden;
+}
+.main{
+    padding: 0.55rem;
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+   border-radius: 1rem;   /* 16px */
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+    margin-right: 0.5rem;
+}
+.main-content{
+    border-radius: 1rem;   /* 16px */
+    background-color: #121212;
+    flex:1;
+    overflow: auto;
+    padding: 0 0.5rem 0 0;
+}
+.music-player{
+    background-color:#121212;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px ;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    background-color: #121212;
+}
+.nav-option{
+    background-color: #121212;
+    height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity:1;
+}
+.nav-option i{
+    background-color: #121212;
+    font-size: 1.25rem;
+}
+.nav-option a{
+    background-color: #121212;
+    font-size: 1rem;
+    margin: 1rem;
+}
+.library{
+    margin-top: 0.5rem;
+    padding: 0.75rem 0.75rem;
+
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+
+
+}
+
+.options{
+    background-color: #121212;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lib-option img{
+    background-color: #121212;
+
+    height:1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    background-color: #121212;
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    background-color: #121212;
+
+    opacity: 0.7;
+    margin: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+.boxes{
+    background-color: #121212;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+    height:8rem ;
+    justify-content: space-evenly;
+    background-color: #232323;
+    border-radius: 0.75rem;
+}
+.box-p1{
+    background-color: #232323;
+    
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.box-p2{
+    background-color: #232323;
+
+    font-size: 0.75rem;
+    opacity:0.9 ;
+    margin-bottom: 0.5rem;
+
+}
+.badge{
+    margin-top: 0.  5rem;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    width: fit-content ;
+}
+.dark-badge{
+    background-color: black;
+    color: #fff;
+}
+.sticky-nav{
+    padding: 1rem 0 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color: #12121299;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;    
+}
+.sticky-nav-icon img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color:#121212;
+    margin-right: 1rem;
+
+
+}
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12121210;
+}
+.sticky-nav-options .profile{
+     font-size: 1.3rem;
+     background-color: #12121210;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.playcard{
+    background-color: greenyellow;
+}
+.list-name{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.5rem 0 0.5rem;
+    height: 21.25rem;
+    background-color: greenyellow;
+}
+.discard{
+    height: 13rem;
+    width: 15rem;
+    padding-left: 2.5rem;
+    position: relative;
+    top: 30%;
+    background-color: greenyellow;
+    backface-visibility: 0.5;
+}
+.list-heading{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 6px 8px 6px black;
+    padding-left: 2rem;
+    background-color: greenyellow;
+    align-items: center;
+
+}
+.list-heading .card-head{
+    font-size: 3.5rem;
+    background-color: greenyellow;
+    font-weight: 700;
+
+}
+.card-discribe{
+    opacity: 0.8;
+    background-color: greenyellow;
+
+}
+.p-shot{
+    background-color: greenyellow;
+}
+.insta-control{
+    display: flex;
+    height: 6.5rem;
+    background-color: #121212;
+    align-items: center;
+}
+.shot-control{
+    display: flex;
+    margin-left: 3rem;
+    height: 4.1rem;
+    justify-content: start;
+    align-items: center;
+    
+    background-color: #121212;
+
+}
+.play-icon{
+    font-size: 3.20rem;
+    margin-right: 2.5rem;
+    background-color: #121212;
+
+}
+.love{
+    font-size: 1.75rem;
+    margin-right: 2.5rem; 
+    background-color: #121212;
+
+}
+.more{
+    font-size: 1.4rem;
+    margin-right: 1rem; 
+    background-color: #121212;
+
+}
+.name-block{
+    display: flex;
+    height: fit-content;
+    
+}
+.small-info{
+    padding-left: 2rem;
+    
+}
+.small-info p{
+    display: flex;
+    font-size: small;
+    font-weight: normal;
+    justify-content: start;
+}
+.album-small-name {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 1.5rem;
+    margin-bottom: 0rem;
+}
+.album-name-small{
+    width: 11rem;
+    margin:0%;
+}
+.small-card-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+}
